@@ -27,7 +27,7 @@ void draw(){
  }
  
  posY+= speedY;
- if ((posY>= width - 25) || (posY<=25)){
+ if ((posY>= height - 25) || (posY<=25)){
   speedY = - speedY; 
  }
  
