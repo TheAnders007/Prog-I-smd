@@ -107,32 +107,42 @@ void draw() {
   quad(950, 600, 925, 600, 925, 575, 950, 550); //CANTO INFERIOR DIREITO (MEN0R)
   
   
+  //ARCOS
+  fill(210, 90, 90); //AZUL
   
-  //QUADRADO 1X2
-  arc(200, 0, 200, 200, radians(90), radians(180));
+  arc(200, 0, 200, 200, radians(90), radians(180)); //NOROESTE
+  arc(200, 100, 200, 200, radians(270), radians(360)); //NOROESTE
   
-  //QUADRADO 1X3
-  arc(200, 100, 200, 200, radians(270), radians(360));
+  arc(800, 100, 200, 200, radians(180), radians(270)); //NORDESTE
+  arc(800, 0, 200, 200, radians(0), radians(90)); //NOROESTE
   
+  arc(200, 600, 200, 200, radians(180), radians(270)); //SUDOESTE
+  arc(200, 500, 200, 200, radians(0), radians(90)); //SUDOESTE
   
-  //QUADRADO 1X5
+  arc(800, 500, 200, 200, radians(90), radians(180)); //SUDESTE
+  arc(800, 600, 200, 200, radians(270), radians(360)); //SUDESTE
+  
+  fill(60, 90, 90); //AMARELO
  
-  arc(450, 0, 100, 100, 0, PI);
-  arc(450, 100, 100, 100, PI, radians(360));
+  arc(450, 0, 100, 100, 0, PI); //NORTE
+  arc(450, 100, 100, 100, PI, radians(360)); //NORTE
+  arc(500, 50, 100, 100, radians(270), radians(450)); //NORTE
+  arc(600, 50, 100, 100, radians(90), radians(270)); //NORTE
   
-  //QUADRADO 1X6
-  arc(500, 50, 100, 100, radians(270), radians(450));
-  arc(600, 50, 100, 100, radians(90), radians(270));
+  fill(360, 90, 90); //VERMELHO
+  stroke(360, 90, 90);
+  strokeWeight(2);
   
+  arc(500, 200, 200, 200, radians(90), radians(180), CHORD); //CENTRO
+  arc(400, 300, 200, 200, radians(270), radians(360), CHORD); //CENTRO
+  arc(500, 200, 200, 200, radians(0), radians(90), CHORD); //CENTRO
+  arc(600, 300, 200, 200, radians(180), radians(270), CHORD); //CENTRO
+  arc(500, 400, 200, 200, radians(180), radians(270), CHORD); //CENTRO
+  arc(400, 300, 200, 200, radians(0), radians(90), CHORD); //CENTRO
+  arc(600, 300, 200, 200, radians(90), radians(180), CHORD); //CENTRO
+  arc(500, 400, 200, 200, radians(270), radians(360), CHORD); //CENTRO
   
-  //QUADRADO 1X8
-  fill(240, 50, 100);
-  arc(800, 100, 200, 200, radians(180), radians(270));
-  
-  //QUADRADO 1X9
-  arc(800, 0, 200, 200, radians(0), radians(90));
-  
-  //LINHA 2
+  noStroke();
   
   //QUADRADO 2X1
 
@@ -154,23 +164,17 @@ void draw() {
   //QUADRADO 3X5
   fill(240, 50, 100);
   stroke(240, 50, 100); //ROXO
-  arc(500, 200, 200, 200, radians(90), radians(180), CHORD);
-  arc(400, 300, 200, 200, radians(270), radians(360), CHORD);
   noStroke();
   
   //QUADRADO 3X6
   stroke(240, 50, 100); //ROXO
   strokeWeight(2);
-  arc(500, 200, 200, 200, radians(0), radians(90), CHORD);
-  arc(600, 300, 200, 200, radians(180), radians(270), CHORD);
   strokeWeight(1);
   noStroke();
   
   //QUADRADO 3X6
   stroke(240, 50, 100); //ROXO
   //strokeWeight(2);
-  arc(500, 400, 200, 200, radians(270), radians(360), CHORD);
-  arc(600, 300, 200, 200, radians(90), radians(180), CHORD);
   noStroke();
 
   
@@ -184,8 +188,7 @@ void draw() {
    //QUADRADO 4X5
   stroke(240, 50, 100); //ROXO
   strokeWeight(2);
-  arc(500, 400, 200, 200, radians(180), radians(270), CHORD);
-  arc(400, 300, 200, 200, radians(0), radians(90), CHORD);
+
   strokeWeight(1);
   noStroke();
 
@@ -201,18 +204,6 @@ void draw() {
   arc(1000, 400, 200, 200, radians(90), radians(180), CHORD);
   arc(900, 500, 200, 200, radians(270), radians(360), CHORD);
   noStroke();
-
-  //QUADRADO 6X2
-  arc(200, 600, 200, 200, radians(180), radians(270));
-
-  //QUADRADO 6X3
-  arc(200, 500, 200, 200, radians(0), radians(90));
-  
-  //QUADRADO 6X8
-  arc(800, 500, 200, 200, radians(90), radians(180));
-  
-  //QUADRADO 6X9
-  arc(800, 600, 200, 200, radians(270), radians(360));
   
   //QUADRADO 2X4
   arc(400, 300, 400, 400, radians(90), radians(270));
