@@ -1,5 +1,5 @@
 void setup() {
-  size(1000, 600);
+  size(600, 800);
   colorMode(HSB, 360, 100, 100);
   PFont baumans = createFont("Baumans-Regular.ttf", 128);
   textFont(baumans);
@@ -19,77 +19,67 @@ void draw() {
   ellipse(50, 75, 10, 10); //CANTO SUPERIOR ESQUERDO
   ellipse(75, 75, 10, 10); //CANTO SUPERIOR ESQUERDO
   
-  ellipse(925, 25, 10, 10); //CANTO SUPERIOR DIREITO
-  ellipse(925, 50, 10, 10); //CANTO SUPERIOR DIREITO
-  ellipse(950, 50, 10, 10); //CANTO SUPERIOR DIREITO
-  ellipse(925, 75, 10, 10); //CANTO SUPERIOR DIREITO
-  ellipse(950, 75, 10, 10); //CANTO SUPERIOR DIREITO
-  ellipse(975, 75, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(525, 25, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(525, 50, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(550, 50, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(525, 75, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(550, 75, 10, 10); //CANTO SUPERIOR DIREITO
+  ellipse(575, 75, 10, 10); //CANTO SUPERIOR DIREITO
   
-  ellipse(25, 525, 10, 10); //CANTO INFERIOR ESQUERDO
-  ellipse(50, 525, 10, 10); //CANTO INFERIOR ESQUERDO
-  ellipse(75, 525, 10, 10); //CANTO INFERIOR ESQUERDO
-  ellipse(50, 550, 10, 10); //CANTO INFERIOR ESQUERDO
-  ellipse(75, 550, 10, 10); //CANTO INFERIOR ESQUERDO
-  ellipse(75, 575, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(25, 725, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(50, 725, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(75, 725, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(50, 750, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(75, 750, 10, 10); //CANTO INFERIOR ESQUERDO
+  ellipse(75, 775, 10, 10); //CANTO INFERIOR ESQUERDO
   
-  ellipse(975, 525, 10, 10); //CANTO INFERIOR DIREITO
-  ellipse(950, 550, 10, 10); //CANTO INFERIOR DIREITO
-  ellipse(925, 550, 10, 10); //CANTO INFERIOR DIREITO
-  ellipse(925, 525, 10, 10); //CANTO INFERIOR DIREITO
-  ellipse(950, 525, 10, 10); //CANTO INFERIOR DIREITO
-  ellipse(925, 575, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(575, 725, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(550, 750, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(525, 750, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(525, 725, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(550, 725, 10, 10); //CANTO INFERIOR DIREITO
+  ellipse(525, 775, 10, 10); //CANTO INFERIOR DIREITO
   
   //RETÂNGULOS
-  rect(0, 100, 1000, 10); //RETÃNGULO 1 DE CIMA
-  rect(0, 120, 1000, 10); //RETÂNGULO 2 DE CIMA
-  rect(0, 140, 1000, 10); //RETÃNGULO 3 DE CIMA
-  rect(0, 160, 1000, 10); //RETÂNGULO 4 DE CIMA
-  rect(0, 180, 1000, 10); //RETÂNGULO 5 DE CIMA
+  rect(100, 0, 10, 800); //RETÃNGULO 1 DA ESQUEDA
+  rect(120, 0, 10, 800); //RETÂNGULO 2 DA ESQUEDA
+  rect(140, 0, 10, 800); //RETÃNGULO 3 DA ESQUEDA
+  rect(160, 0, 10, 800); //RETÂNGULO 4 DA ESQUEDA
+  rect(180, 0, 10, 800); //RETÂNGULO 5 DA ESQUEDA
   
-  rect(0, 410, 1000, 10); //RETÂNGULO 1 DE BAIXO
-  rect(0, 430, 1000, 10); //RETÂNGULO 2 DE BAIXO
-  rect(0, 450, 1000, 10); //RETÂNGULO 3 DE BAIXO
-  rect(0, 470, 1000, 10); //RETÂNGULO 4 DE BAIXO
-  rect(0, 490, 1000, 10); //RETÂNGULO 5 DE BAIXO
+  rect(410, 0, 10, 800); //RETÂNGULO 1 DA DIREITA
+  rect(430, 0, 10, 800); //RETÂNGULO 2 DA DIREITA
+  rect(450, 0, 10, 800); //RETÂNGULO 3 DA DIREITA
+  rect(470, 0, 10, 800); //RETÂNGULO 4 DA DIREITA
+  rect(490, 0, 10, 800); //RETÂNGULO 5 DA DIREITA
   
   //TRIÂNGULOS DOS CANTOS
   fill(0, 90, 80); //VERMELHO
   
   triangle(0, 0, 100, 0, 0, 100); //CANTO SUPERIOR ESQUERDO
-  triangle(1000, 0, 900, 0, 1000, 100); //CANTO SUPERIOR DIREITO
-  triangle(0, 600, 100, 600, 0, 500); //CANTO INFERIOR ESQUERDO
-  triangle(900, 600, 1000, 500, 1000, 600); //CANTO INFERIOR DIREITO
+  triangle(600, 0, 500, 0, 600, 100); //CANTO SUPERIOR DIREITO
+  triangle(0, 800, 100, 800, 0, 700); //CANTO INFERIOR ESQUERDO
+  triangle(500, 800, 600, 700, 600, 800); //CANTO INFERIOR DIREITO
   
   //TRIÂNGULOS "BORBOLETAS"
   
-  triangle(330, 0, 300, 30, 350, 50); //NOROESTE
-  triangle(330, 100, 300, 70, 350, 50); //NOROESTE
-  triangle(370, 0, 400, 30, 350, 50); //NOROESTE
-  triangle(400, 70, 370, 100, 350, 50); //NOROESTE
+  triangle(230, 0, 200, 30, 250, 50); //NORTE (UM POUCO PRA ESQUERDA)
+  triangle(230, 100, 200, 70, 250, 50); //NORTE (UM POUCO PRA ESQUERDA)
+  triangle(270, 0, 300, 30, 250, 50); //NORTE (UM POUCO PRA ESQUERDA)
+  triangle(300, 70, 270, 100, 250, 50); //NORTE (UM POUCO PRA ESQUERDA)
 
-  triangle(630, 0, 600, 30, 650, 50); //NORDESTE
-  triangle(630, 100, 600, 70, 650, 50); //NORDESTE
-  triangle(670, 0, 700, 30, 650, 50); //NORDESTE
-  triangle(700, 70, 670, 100, 650, 50); //NORDESTE
-  
-  triangle(330, 500, 300, 530, 350, 550); //SUDOESTE
-  triangle(330, 600, 300, 570, 350, 550); //SUDOESTE
-  triangle(370, 500, 400, 530, 350, 550); //SUDOESTE
-  triangle(400, 570, 370, 600, 350, 550); //SUDOESTE
-  
-  triangle(630, 500, 600, 530, 650, 550); //SUDESTE
-  triangle(630, 600, 600, 570, 650, 550); //SUDESTE
-  triangle(670, 500, 700, 530, 650, 550); //SUDESTE
-  triangle(700, 570, 670, 600, 650, 550); //SUDESTE
+  triangle(330, 0, 300, 30, 350, 50); //NORTE (UM POUCO PRA DIREITA)
+  triangle(330, 100, 300, 70, 350, 50); //NORTE (UM POUCO PRA DIREITA)
+  triangle(370, 0, 400, 30, 350, 50); //NORTE (UM POUCO PRA DIREITA)
+  triangle(400, 70, 370, 100, 350, 50); //NORTE (UM POUCO PRA DIREITA)
   
   fill(210, 90, 70); //AZUL
   
-  triangle(160, 200, 100, 260, 200, 300); //OESTE
-  triangle(200, 300, 100, 340, 160, 400); //OESTE
+  triangle(260, 100, 200, 160, 300, 200); //NORTE (UM POUCO PRA ESQUERDA)
+  triangle(340, 100, 400, 160, 300, 200); //NORTE (UM POUCO PRA ESQUERDA)
   
-  triangle(840, 200, 900, 260, 800, 300); //LESTE
-  triangle(800, 300, 840, 400, 900, 340); //LESTE
+  triangle(300, 600, 200, 640, 260, 700); //NORTE (UM POUCO PRA DIREITA)
+  triangle(300, 600, 340, 700, 400, 640); //NORTE (UM POUCO PRA DIREITA)
   
   //QUADRILÁTEROS
   fill(60, 90, 90); //AMARELO
@@ -97,127 +87,136 @@ void draw() {
   quad(0, 0, 25, 0, 25, 75, 0, 100); //CANTO SUPERIOR ESQUERDO (MAIOR)
   quad(50, 0, 75, 0, 75, 25, 50, 50); //CANTO SUPERIOR ESQUERDO (MENOR)
   
-  quad(1000, 0, 975, 0, 975, 75, 1000, 100); //CANTO SUPERIOR DIREITO (MAIOR)
-  quad(950, 0, 925, 0, 925, 25, 950, 50); //CANTO SUPERIOR DIREITO (MAIOR)
+  quad(600, 0, 575, 0, 575, 75, 600, 100); //CANTO SUPERIOR DIREITO (MAIOR)
+  quad(550, 0, 525, 0, 525, 25, 550, 50); //CANTO SUPERIOR DIREITO (MAIOR)
   
-  quad(0, 600, 25, 600, 25, 525, 0, 500); //CANTO INFERIOR ESQUERDO (MAIOR)
-  quad(50, 600, 75, 600, 75, 575, 50, 550); //CANTO INFERIOR ESQUERDO (MENOR)
+  quad(0, 800, 25, 800, 25, 725, 0, 700); //CANTO INFERIOR ESQUERDO (MAIOR)
+  quad(50, 800, 75, 800, 75, 775, 50, 750); //CANTO INFERIOR ESQUERDO (MENOR)
   
-  quad(975, 600, 1000, 600, 1000, 500, 975, 525); //CANTO INFERIOR DIREITO (MAIOR)
-  quad(950, 600, 925, 600, 925, 575, 950, 550); //CANTO INFERIOR DIREITO (MEN0R)
+  quad(575, 800, 600, 800, 600, 700, 575, 725); //CANTO INFERIOR DIREITO (MAIOR)
+  quad(550, 800, 525, 800, 525, 775, 550, 750); //CANTO INFERIOR DIREITO (MEN0R)
   
   
   //ARCOS
   fill(210, 90, 70); //AZUL
   
-  arc(200, 0, 200, 200, radians(90), radians(180)); //NOROESTE
-  arc(200, 100, 200, 200, radians(270), radians(360)); //NOROESTE
+  arc(0, 200, 200, 200, radians(270), radians(360)); //NOROESTE
+  arc(100, 200, 200, 200, radians(90), radians(180)); //NOROESTE
   
-  arc(800, 100, 200, 200, radians(180), radians(270)); //NORDESTE
-  arc(800, 0, 200, 200, radians(0), radians(90)); //NOROESTE
+  arc(600, 200, 200, 200, radians(180), radians(270)); //NORDESTE
+  arc(500, 200, 200, 200, radians(0), radians(90)); //NOROESTE
   
-  arc(200, 600, 200, 200, radians(180), radians(270)); //SUDOESTE
-  arc(200, 500, 200, 200, radians(0), radians(90)); //SUDOESTE
+  arc(100, 600, 200, 200, radians(180), radians(270)); //SUDOESTE
+  arc(0, 600, 200, 200, radians(0), radians(90)); //SUDOESTE
   
-  arc(800, 500, 200, 200, radians(90), radians(180)); //SUDESTE
-  arc(800, 600, 200, 200, radians(270), radians(360)); //SUDESTE
+  arc(500, 600, 200, 200, radians(270), radians(360)); //SUDESTE
+  arc(600, 600, 200, 200, radians(90), radians(180)); //SUDESTE
   
   
   fill(0, 90, 80); //VERMELHO
   stroke(0, 90, 80); //BORDA VERMELHA
   strokeWeight(2);
   
-  arc(500, 200, 200, 200, radians(90), radians(180), CHORD); //CENTRO
-  arc(400, 300, 200, 200, radians(270), radians(360), CHORD); //CENTRO
-  arc(500, 200, 200, 200, radians(0), radians(90), CHORD); //CENTRO
-  arc(600, 300, 200, 200, radians(180), radians(270), CHORD); //CENTRO
-  arc(500, 400, 200, 200, radians(180), radians(270), CHORD); //CENTRO
-  arc(400, 300, 200, 200, radians(0), radians(90), CHORD); //CENTRO
-  arc(600, 300, 200, 200, radians(90), radians(180), CHORD); //CENTRO
-  arc(500, 400, 200, 200, radians(270), radians(360), CHORD); //CENTRO
+  arc(300, 300, 200, 200, radians(90), radians(180), CHORD); //CENTRO
+  arc(200, 400, 200, 200, radians(270), radians(360), CHORD); //CENTRO
+  arc(300, 300, 200, 200, radians(0), radians(90), CHORD); //CENTRO
+  arc(400, 400, 200, 200, radians(180), radians(270), CHORD); //CENTRO
+  arc(300, 500, 200, 200, radians(180), radians(270), CHORD); //CENTRO
+  arc(200, 400, 200, 200, radians(0), radians(90), CHORD); //CENTRO
+  arc(400, 400, 200, 200, radians(90), radians(180), CHORD); //CENTRO
+  arc(300, 500, 200, 200, radians(270), radians(360), CHORD); //CENTRO
   
   noStroke();
   
-  arc(0, 300, 200, 200, radians(270), radians(450)); //OESTE (SEMICÍRCULO VERMELHO EXTERNO)
-  arc(1000, 300, 200, 200, radians(90), radians(270)); //LESTE (SEMICÍRCULO VERMELHO EXTERNO)
+  arc(0, 400, 200, 200, radians(270), radians(450)); //OESTE (SEMICÍRCULO VERMELHO EXTERNO)
+  arc(600, 400, 200, 200, radians(90), radians(270)); //LESTE (SEMICÍRCULO VERMELHO EXTERNO)
  
   fill(60, 90, 90); //AMARELO
- 
-  arc(450, 0, 100, 100, 0, PI); //NORTE
-  arc(450, 100, 100, 100, PI, radians(360)); //NORTE
-  arc(500, 50, 100, 100, radians(270), radians(450)); //NORTE
-  arc(600, 50, 100, 100, radians(90), radians(270)); //NORTE
   
   stroke(60, 90, 90);
   strokeWeight(2);
   
-  arc(0, 200, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) NOROESTE
-  arc(100, 100, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) NOROESTE
-  arc(1000, 200, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) NORDESTE
-  arc(900, 100, 200, 200, 0, radians(90), CHORD); //(PÉTALA) NORDESTE
-  arc(100, 500, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) SUDOESTE
-  arc(0, 400, 200, 200, radians(0), radians(90), CHORD); //(PÉTALA) SUDOESTE
-  arc(1000, 400, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) SUDESTE
-  arc(900, 500, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) SUDESTE
+  arc(100, 100, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) NOROESTE
+  arc(200, 0, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) NOROESTE
+  arc(500, 100, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) NORDESTE
+  arc(400, 0, 200, 200, 0, radians(90), CHORD); //(PÉTALA) NORDESTE
+  arc(200, 800, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) SUDOESTE
+  arc(100, 700, 200, 200, radians(0), radians(90), CHORD); //(PÉTALA) SUDOESTE
+  arc(500, 700, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) SUDESTE
+  arc(400, 800, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) SUDESTE
   
   noStroke();
   strokeWeight(1);
   
-  arc(0, 300, 150, 150, radians(270), radians(450)); //SEMICÍRCULO MÉDIO ESQUERDO
-  arc(1000, 300, 150, 150, radians(90), radians(270)); //SEMICÍRCULO MÉDIO DIREITO
+  arc(0, 400, 150, 150, radians(270), radians(450)); //SEMICÍRCULO AMAREL0O ESQUERDO
+  arc(600, 400, 150, 150, radians(90), radians(270)); //SEMICÍRCULO AMARELO DIREITO
   
-  arc(400, 300, 400, 400, radians(90), radians(270)); //SEMICÍRCULO GRANDE ESQUERDO
-  arc(600, 300, 400, 400, radians(270), radians(450)); //SEMICÍRCULO GRANDE DIREITO
+  arc(300, 300, 200, 200, radians(180), radians(360)); //SEMICÍRCULO AMARELO DE CIMA
+  arc(300, 500, 200, 200, radians(0), radians(180)); //SEMICÍRCULO AMARELO DE BAIXO
   
   fill(210, 90, 70); //AZUL
-  arc(400, 300, 200, 200, radians(90), radians(270)); //SEMICÍRCULO AZUL ESQUERDO
-  arc(600, 300, 200, 200, radians(270), radians(450)); //SEMICÍRCULO AZUL DIREITO
+  arc(300, 300, 100, 100, radians(180), radians(360)); //SEMICÍRCULO AZUL DE CIMA
+  arc(300, 500, 100, 100, radians(0), radians(180)); //SEMICÍRCULO AZUL DE BAIXO
   
   fill(0, 90, 80); //VERMELHO
   
-  arc(0, 300, 100, 100, radians(270), radians(450)); //SEMICÍRCULO MENOR ESQUERDO
-  arc(1000, 300, 100, 100, radians(90), radians(270)); //SEMICÍRCULO MENOR DIREITO
+  arc(0, 400, 100, 100, radians(270), radians(450)); //SEMICÍRCULO MENOR ESQUERDO
+  arc(600, 400, 100, 100, radians(90), radians(270)); //SEMICÍRCULO MENOR DIREITO
   
   fill(0, 90, 80);
-  rect(400, 500, 200, 100);
+  rect(width/2 - 100, height - 100, 200, 100);
   fill(0, 0, 100);
   textAlign(CENTER);
   textSize(30);
-  text("BAUHAUS", 500, 545);
-  text("2025", 500, 580);
+  text("BAUHAUS", 300, 745);
+  text("2025", 300, 780);
   
-  //LINHAS PARA GRADE
+//LINHAS PARA GRADE
   
-  //for (int w=0; w <= 1000; w+=100) {
+  //for (int w=0; w <= 600; w+=100) {
   //  stroke(300, 100, 100);
-  //  line(w, 0, w, 600);
+  //  line(w, 0, w, 800);
+  //}
+
+  //line(25, 0, 25, 800);
+  //line(50, 0, 50, 800);
+  //line(75, 0, 75, 800);
+  
+  //for (int w=100; w <= 500; w+=10) {
+  //  stroke(300, 100, 100);
+  //  line(w, 0, w, 800);
   //}
   
-  //line(25, 0, 25, 600);
-  //line(50, 0, 50, 600);
-  //line(75, 0, 75, 600);
+  //line(525, 0, 525, 800);
+  //line(550, 0, 550, 800);
+  //line(575, 0, 575, 800);
   
-  //line(550, 0, 550, 600);
-  //line(350, 0, 350, 600);
-  //line(650, 0, 650, 600);
-  
-  //line(925, 0, 925, 600);
-  //line(950, 0, 950, 600);
-  //line(975, 0, 975, 600);
-  
-  //for (int h=0; h <= 600; h+=100) {
+  //for (int h=0; h <= 800; h+=100) {
   //  stroke(150, 100, 50);
-  //  line(0, h, 1000, h);
+  //  line(0, h, 600, h);
   //}
   
-  //line(0, 25, 1000, 25);
-  //line(0, 50, 1000, 50);
-  //line(0, 75, 1000, 75);
+  //line(0, 25, 600, 25);
+  //line(0, 50, 600, 50);
+  //line(0, 75, 600, 75);
   
-  //line(0, 525, 1000, 525);
-  //line(0, 550, 1000, 550);
-  //line(0, 575, 1000, 575);
+  //for (int h=100; h <= 200; h+=10) {
+  //  stroke(150, 100, 50);
+  //  line(0, h, 600, h);
+  //}
   
+  //line(0, 250, 600, 250);
+  //line(0, 550, 600, 550);
+  
+  //for (int h=600; h <= 700; h+=10) {
+  //  stroke(150, 100, 50);
+  //  line(0, h, 600, h);
+  //}
+  //line(0, 725, 600, 725);
+  //line(0, 750, 600, 750);
+  //line(0, 775, 600, 775);
+  
+ 
   //saveFrame();
 
 }
