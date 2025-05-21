@@ -10,7 +10,7 @@ void draw() {
   noStroke();
 
   //ELIPSES
-  fill(210, 90, 90); //AZUL
+  fill(210, 90, 70); //AZUL
   
   ellipse(75, 25, 10, 10); //CANTO SUPERIOR ESQUERDO
   ellipse(50, 50, 10, 10); //CANTO SUPERIOR ESQUERDO
@@ -54,7 +54,7 @@ void draw() {
   rect(0, 490, 1000, 10); //RETÂNGULO 5 DE BAIXO
   
   //TRIÂNGULOS DOS CANTOS
-  fill(360, 90, 90); //VERMELHO
+  fill(0, 90, 80); //VERMELHO
   
   triangle(0, 0, 100, 0, 0, 100); //CANTO SUPERIOR ESQUERDO
   triangle(1000, 0, 900, 0, 1000, 100); //CANTO SUPERIOR DIREITO
@@ -83,7 +83,7 @@ void draw() {
   triangle(670, 500, 700, 530, 650, 550); //SUDESTE
   triangle(700, 570, 670, 600, 650, 550); //SUDESTE
   
-  fill(210, 90, 90); //AZUL
+  fill(210, 90, 70); //AZUL
   
   triangle(160, 200, 100, 260, 200, 300); //OESTE
   triangle(200, 300, 100, 340, 160, 400); //OESTE
@@ -108,7 +108,7 @@ void draw() {
   
   
   //ARCOS
-  fill(210, 90, 90); //AZUL
+  fill(210, 90, 70); //AZUL
   
   arc(200, 0, 200, 200, radians(90), radians(180)); //NOROESTE
   arc(200, 100, 200, 200, radians(270), radians(360)); //NOROESTE
@@ -122,15 +122,9 @@ void draw() {
   arc(800, 500, 200, 200, radians(90), radians(180)); //SUDESTE
   arc(800, 600, 200, 200, radians(270), radians(360)); //SUDESTE
   
-  fill(60, 90, 90); //AMARELO
- 
-  arc(450, 0, 100, 100, 0, PI); //NORTE
-  arc(450, 100, 100, 100, PI, radians(360)); //NORTE
-  arc(500, 50, 100, 100, radians(270), radians(450)); //NORTE
-  arc(600, 50, 100, 100, radians(90), radians(270)); //NORTE
   
-  fill(360, 90, 90); //VERMELHO
-  stroke(360, 90, 90);
+  fill(0, 90, 80); //VERMELHO
+  stroke(0, 90, 80); //BORDA VERMELHA
   strokeWeight(2);
   
   arc(500, 200, 200, 200, radians(90), radians(180), CHORD); //CENTRO
@@ -144,100 +138,63 @@ void draw() {
   
   noStroke();
   
-  //QUADRADO 2X1
-
-  stroke(60, 50, 100);
-  strokeWeight(2);
-  arc(0, 200, 200, 200, radians(270), radians(360), CHORD);
-  arc(100, 100, 200, 200, radians(90), radians(180), CHORD);
+  arc(0, 300, 200, 200, radians(270), radians(450)); //OESTE (SEMICÍRCULO VERMELHO EXTERNO)
+  arc(1000, 300, 200, 200, radians(90), radians(270)); //LESTE (SEMICÍRCULO VERMELHO EXTERNO)
+ 
+  fill(60, 90, 90); //AMARELO
+ 
+  arc(450, 0, 100, 100, 0, PI); //NORTE
+  arc(450, 100, 100, 100, PI, radians(360)); //NORTE
+  arc(500, 50, 100, 100, radians(270), radians(450)); //NORTE
+  arc(600, 50, 100, 100, radians(90), radians(270)); //NORTE
   
-  //QUADRADO 2X10
-  arc(1000, 200, 200, 200, radians(180), radians(270), CHORD);
-  arc(900, 100, 200, 200, 0, radians(90), CHORD);
+  stroke(60, 90, 90);
+  strokeWeight(2);
+  
+  arc(0, 200, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) NOROESTE
+  arc(100, 100, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) NOROESTE
+  arc(1000, 200, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) NORDESTE
+  arc(900, 100, 200, 200, 0, radians(90), CHORD); //(PÉTALA) NORDESTE
+  arc(100, 500, 200, 200, radians(180), radians(270), CHORD); //(PÉTALA) SUDOESTE
+  arc(0, 400, 200, 200, radians(0), radians(90), CHORD); //(PÉTALA) SUDOESTE
+  arc(1000, 400, 200, 200, radians(90), radians(180), CHORD); //(PÉTALA) SUDESTE
+  arc(900, 500, 200, 200, radians(270), radians(360), CHORD); //(PÉTALA) SUDESTE
+  
   noStroke();
   strokeWeight(1);
   
-  //QUADRADO 3X1
-  ellipse(0, 300, 200, 200);
-  ellipse(0, 300, 100, 100);
+  arc(0, 300, 150, 150, radians(270), radians(450)); //SEMICÍRCULO MÉDIO ESQUERDO
+  arc(1000, 300, 150, 150, radians(90), radians(270)); //SEMICÍRCULO MÉDIO DIREITO
   
-  //QUADRADO 3X5
-  fill(240, 50, 100);
-  stroke(240, 50, 100); //ROXO
-  noStroke();
+  arc(400, 300, 400, 400, radians(90), radians(270)); //SEMICÍRCULO GRANDE ESQUERDO
+  arc(600, 300, 400, 400, radians(270), radians(450)); //SEMICÍRCULO GRANDE DIREITO
   
-  //QUADRADO 3X6
-  stroke(240, 50, 100); //ROXO
-  strokeWeight(2);
-  strokeWeight(1);
-  noStroke();
+  fill(210, 90, 70); //AZUL
+  arc(400, 300, 200, 200, radians(90), radians(270)); //SEMICÍRCULO AZUL ESQUERDO
+  arc(600, 300, 200, 200, radians(270), radians(450)); //SEMICÍRCULO AZUL DIREITO
   
-  //QUADRADO 3X6
-  stroke(240, 50, 100); //ROXO
-  //strokeWeight(2);
-  noStroke();
-
+  fill(0, 90, 80); //VERMELHO
   
-  //QUADRADO 3X10
-  fill(60, 50, 100);
-  ellipse(1000, 300, 200, 200);
-  fill(240, 50, 100);
-  ellipse(1000, 300, 100, 100);
-
+  arc(0, 300, 100, 100, radians(270), radians(450)); //SEMICÍRCULO MENOR ESQUERDO
+  arc(1000, 300, 100, 100, radians(90), radians(270)); //SEMICÍRCULO MENOR DIREITO
   
-   //QUADRADO 4X5
-  stroke(240, 50, 100); //ROXO
-  strokeWeight(2);
-
-  strokeWeight(1);
-  noStroke();
-
-  //QUADRADO 5X1
-
-  stroke(240, 50, 100);
-  strokeWeight(2);
-  arc(100, 500, 200, 200, radians(180), radians(270), CHORD);
-  arc(0, 400, 200, 200, radians(0), radians(90), CHORD);
-  strokeWeight(1);
-  
-  //QUADRADO 5X10
-  arc(1000, 400, 200, 200, radians(90), radians(180), CHORD);
-  arc(900, 500, 200, 200, radians(270), radians(360), CHORD);
-  noStroke();
-  
-  //QUADRADO 2X4
-  arc(400, 300, 400, 400, radians(90), radians(270));
-  
-  //QUADRADO 3X4
-  fill(0, 0, 100);
-  arc(400, 300, 200, 200, radians(90), radians(270));
-  
-  //QUADRADO 2X7
-  fill(240, 50, 100);
-  arc(600, 300, 400, 400, radians(270), radians(450));
-  
-  //QUADRADO 3X7
-  fill(0, 0, 100);
-  arc(600, 300, 200, 200, radians(270), radians(450));
-  
-  fill(240, 50, 100);
-  rect(400, 400, 200, 100);
-  fill(240, 50, 0);
+  fill(0, 90, 80);
   rect(400, 500, 200, 100);
   fill(0, 0, 100);
   textAlign(CENTER);
   textSize(30);
-  text("BAUHAUS", 500, 550);
+  text("BAUHAUS", 500, 545);
   text("2025", 500, 580);
   
-  for (int w=0; w <= 1000; w+=100) {
-    stroke(0, 0, 0);
-    fill(0, 0, 0);
-    line(w, 0, w, 600);
-  }
-  for (int h=0; h <= 600; h+=100) {
-    stroke(0, 0, 0);
-    fill(0, 0, 0);
-    line(0, h, 1000, h);
-  }
+  //for (int w=0; w <= 1000; w+=100) {
+  //  stroke(0, 0, 0);
+  //  fill(0, 0, 0);
+  //  line(w, 0, w, 600);
+  //}
+  //for (int h=0; h <= 600; h+=100) {
+  //  stroke(0, 0, 0);
+  //  fill(0, 0, 0);
+  //  line(0, h, 1000, h);
+  //}
+
 }
