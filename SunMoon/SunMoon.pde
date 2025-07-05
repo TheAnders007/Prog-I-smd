@@ -13,6 +13,7 @@ void draw() {
       else pad02(i * 100, j * 100, 100);
     }
   }
+
 }
 
 
@@ -79,13 +80,16 @@ void triangIso(float px, float py, float b, float h, String dir) {
 
 void lua(float px, float py, float tam) {
   fill(40, 65, 100);
-  ellipse(px, py, tam, tam);
+  ellipse(px, py, 0.95*tam, 0.95*tam);
 
   fill(60, 50, 100);
-  ellipse(px, py, 0.92 * tam, 0.92 * tam);
+  ellipse(px, py, 0.87 * tam, 0.87 * tam);
 
   fill(235, 70, 64);
   ellipse(px + 0.2 * tam, py - 0.2 * tam, 0.92 * tam, 0.92 * tam);
+
+  fill(60, 50, 100, 50);
+  ellipse(px, py, tam, tam);
 }
 
 void estrela(float px, float py, float tam) {
