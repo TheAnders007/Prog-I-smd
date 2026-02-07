@@ -6,14 +6,12 @@ void setup() {
 }
 
 void draw() {
-
   for (int i = 0; i < 8; i++) {
     for (int j = 0; j < 8; j++) {
       if (i % 2 == j % 2) pad01(i * 100, j * 100, 100);
       else pad02(i * 100, j * 100, 100);
     }
   }
-
 }
 
 
@@ -25,13 +23,17 @@ void pad01(float px, float py, float tam) {
 
   sol(px + tam/2, py + tam/2, 0.9 * tam);
   
+  //Nuvens
   fill(0, 0, 100);
   arc(px, py, 0.4 * tam, 0.4 * tam, 0, radians(90));
   arc(px, py, 0.6 * tam, 0.2 * tam, radians(0), radians(90));
+  arc(px + tam, py, 0.4 * tam, 0.4 * tam, radians(90), radians(180));
+  arc(px + tam, py, 0.6 * tam, 0.2 * tam, radians(90), radians(180));
+  arc(px, py + tam, 0.4 * tam, 0.4 * tam, radians(270), radians(360));
+  arc(px, py + tam, 0.6 * tam, 0.2 * tam, radians(270), radians(360));
   arc(px + tam, py + tam, 0.4 * tam, 0.4 * tam, radians(180), radians(270));
   arc(px + tam, py + tam, 0.6 * tam, 0.2 * tam, radians(180), radians(270));
 }
-
 
 void pad02(float px, float py, float tam){
   fill(235, 70, 64);
@@ -41,11 +43,15 @@ void pad02(float px, float py, float tam){
   estrela(px + 0.15 * tam, py + 0.15 * tam, tam * 0.1);
   estrela(px + 0.85 * tam, py + 0.85 * tam, tam * 0.15);
   
+  //Nuvens
   fill(0, 0, 100);
-  arc(px + tam, py, 0.4 * tam, 0.4 * tam, radians(90), radians(180));
+  arc(px, py, 0.2 * tam, 0.4 * tam, 0, radians(90));
+  arc(px, py, 0.6 * tam, 0.2 * tam, 0, radians(90));
   arc(px, py + tam, 0.4 * tam, 0.4 * tam, radians(270), radians(360));
   arc(px, py + tam, 0.6 * tam, 0.2 * tam, radians(270), radians(360));
-  arc(px, py + tam, 0.6 * tam, 0.4 * tam, radians(90), radians(180));
+  arc(px + tam, py, 0.6 * tam, 0.4 * tam, radians(90), radians(180));
+  arc(px + tam, py + tam, 0.2 * tam, 0.4 * tam, radians(180), radians(270));
+  arc(px + tam, py + tam, 0.6 * tam, 0.2 * tam, radians(180), radians(270));
 }
 
 
@@ -69,14 +75,12 @@ void sol(float px, float py, float tam) {
   triangIso(px, py + 0.4 * tam, 0.1 * tam/2, 0.2 * tam/2, "s");
 }
 
-
 void triangIso(float px, float py, float b, float h, String dir) {
   if (dir == "n") triangle(px, py, px - b/2, py + h, px + b/2, py + h);
   else if (dir == "s") triangle(px, py, px - b/2, py - h, px + b/2, py - h);
   else if (dir == "l") triangle(px, py, px - h, py - b/2, px - h, py + b/2);
   else if (dir == "o") triangle(px, py, px + h, py - b/2, px + h, py + b/2);
 }
-
 
 void lua(float px, float py, float tam) {
   fill(40, 65, 100);
